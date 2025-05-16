@@ -9,3 +9,5 @@ Program *publisher* akan mengirim **lima data** ke *message broker* dalam satu k
 > **The url of "amqp\://guest\:guest\@localhost:5672" is the same as the one in the subscriber program. What does it mean?**
 
 Alamat URL `amqp://guest:guest@localhost:5672` yang digunakan di program *publisher* sama persis dengan yang digunakan di *subscriber*. Artinya, kedua program terhubung ke *message broker* yang sama. Dengan begitu, setiap *message* yang dikirim oleh *publisher* dapat diterima oleh *subscriber*. Jika URL-nya berbeda, maka *publisher* dan *subscriber* akan berada di sesi atau broker yang berbeda, sehingga *subscriber* tidak akan bisa menerima pesan dari *publisher* tersebut.
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/e768a6da-bb40-42e8-8a6e-d8cc801afa14" />
